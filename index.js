@@ -22,17 +22,15 @@ function viewCart() {
   }
   else{
     let itemsAndPrices = [];
-
     for (let i = 0; i < l; i++) {
       let itemAndPrice = cart[i];
       let item = Object.keys(itemAndPrice)[0];
       let price = itemAndPrice[item];
-
       itemsAndPrices.push(`${item} at \$${price}`);
     }
-
     switch(itemsAndPrices.length) {
       case 1:
+        itemsAndPrices;
         break;
       case 2:
         itemsAndPrices = itemsAndPrices.join(" and ");
